@@ -33,15 +33,17 @@ function App() {
 
   return (
     <div className="main-container">
-      <Heading />
-      <EnterPassword password={password} />
-      <PasswordValidation
-        letter={letter}
-        number={number}
-        symbol={symbol}
-        length={length}
-      />
-      <Submit letter={letter} number={number} symbol={symbol} length={length} />
+      <div className="background-container">
+        <Heading />
+        <EnterPassword password={password} />
+        <PasswordValidation
+          letter={letter}
+          number={number}
+          symbol={symbol}
+          length={length}
+          />
+        <Submit letter={letter} number={number} symbol={symbol} length={length} />
+      </div>
     </div>
   );
 }
